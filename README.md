@@ -1,0 +1,1 @@
+# Jericho-code-quiz-1
