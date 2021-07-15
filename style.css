@@ -1,0 +1,25 @@
+body {
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    
+}
+
+
+#answer-buttons{
+    display: none;
+}
+#question{
+    display: none;
+}
+
+
+#start-button {
+    margin-top: 1000%;
+}
+
+
+
