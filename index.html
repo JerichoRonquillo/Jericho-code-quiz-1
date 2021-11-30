@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class= "controls">
-        <button id= "start-button" class="start-button">start</button>
-    <div id= "container" class= "container">
-        <div id="question-container" class= "hide"></div>
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="button-list">
-                <button class=button>Answer 1</button>
-                <button class=button>Answer 2</button>
-                <button class=button>Answer 3</button>
-                <button class=button>Answer 4</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Code Quiz</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <a id= "score" href="scoreCount.html">View High Scores</a> 
+                <h2 id="timer"></h2>
             </div>
-    </div>
-</body>
+        </header>
+        <main class="container">
+            <div class="row" id= "intro">
+                <h2 class="start">Coding Quiz Challenge</h2>
+                <p id="rules">Answer the questions. Get them wrong and you will lose time!</p>
+                
+            </div>
+            <div>
+                <button class="btnStart" id="startBtn" type="submit" style="margin: left 50%;;">Start Quiz!</button>
+            </div>
+            <div id= "quiz">
+                <div id= "question"></div>
+                    <div id= "choices">
+                        <ul>
+                            <li><button type="button" class="choice option-1 choice-button" id="1" onclick="checkAnswer('1')"></button></li>
+                            <li><button type="button" class="choice option-2 choice-button" id="2" onclick="checkAnswer('2')"></button></li>
+                            <li><button type="button" class="choice option-3 choice-button" id="3" onclick="checkAnswer('3')"></button></li>
+                            <li><button type="button" class="choice option-4 choice-button" id="4" onclick="checkAnswer('4')"></button></li>
+                        </ul>
+                    </div>
+                <div id="answerOutput"> </div>
+            </div>
+            <div id="finalScore">
+                <h2 id="endMessage">All done!</h2>
+                <div id="result"></div>
+                
+                 <form >
+                    <div id="initials">
+                        <label for="users" id="name">Enter Initials:</label>
+                        <input type="text" id="contactInfo">
+                        <input type="button" id= "userInfo" class="submitBtn" onclick="location.href='scoreCount.html';" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </main> 
+        <script src="./script.js"></script>
+    </body>
 </html>

@@ -1,25 +1,255 @@
-body {
-    padding:0;
-    margin:0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: cadetblue;
-    
+:root {
+    --primary-color: green;
+    --secondary-color: gold;
+    --tertiary-color: white;
+  }
+
+
+* {
+    background-color: darkslategray;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 
-#answer-buttons{
-    display: none;
-}
-#question{
-    display: none;
+#header {
+    margin-top: 20px;
 }
 
+#score {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+}
 
-#start-button {
-    margin-top: 1000%;
+#timer {
+    text-align: right;
+    margin-top: -20px;
+    margin-right: 40px;
+    font-size: medium;
 }
 
 
+.start {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20pt;
+}
 
+#rules {
+    text-align: center;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+.btnStart {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    width: 115px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: medium;
+    outline: none;
+}
+
+.btnStart:hover {
+    background-color: var(--secondary-color);
+}
+
+
+#quiz {
+    margin: 100px;
+    margin-left: 40%;
+}
+
+#question {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 28%; 
+}
+
+ul {
+    list-style: none;
+}
+
+.choice-button {
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: white;
+    font-size: small;
+    text-align: left;
+    outline: none;
+}
+
+.choice-button:hover {
+    background-color: var(--secondary-color);
+} 
+
+#answerOutput {
+    padding-top: 20px;
+    font-style: italic;
+    color: gray;
+    font-size: larger;
+}
+
+#endMessage {
+    margin-top: 15%;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+    margin-left: 40%;
+}
+
+#result {
+    margin-left: 40%;
+    padding-bottom: 3px;
+    padding-bottom: 10px;
+}
+
+#name {
+    margin-left: 40%;
+    padding-top: 10px;
+}
+
+#userInfo {
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    font-size: 12px;
+    outline: none;
+}
+
+#userInfo:hover {
+    background-color: var(--secondary-color);
+}
+
+
+#highScore {
+    margin-top: 15%;;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#clear, #goBack {
+    background-color: var(--primary-color);
+    height: 20px;
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#clear {
+    width: 110px;
+    margin-left: 45.75%;
+}
+
+#goBack {
+    width: 70px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+#goBack:hover {
+    background-color: var(--secondary-color);
+}
+
+#clear:hover {
+    background-color: var(--secondary-color);
+}
+
+
+    #clear {
+        margin-left: 44.5%;
+    }
+
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        word-spacing:-2px;
+    } 
+
+
+
+
+ #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        word-spacing:-2px;
+ } 
+
+
+
+ #clear {
+        margin-left: 43%;
+    }
+
+ #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 14pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+.btnStart {
+        margin-left: 42%;
+    }
+
+
+
+#clear {
+        margin-left: 40.5%;
+    }
+
+#rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 14pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+.btnStart {
+        margin-left: 39.5%;
+    }
+
+
+
+#rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 13pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+.btnStart {
+        margin-left: 35%;
+    }
+
+#question, .choices {
+        font-size: 14pt;
+        margin-left: -6%;
+    }
